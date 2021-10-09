@@ -392,28 +392,6 @@ def conv2dFiltter(img,filtring,Padding):
 
 
 
-"""
-
-a = padding(image,0)
-b = greyscale(a)
-c = np.asarray(b, np.integer)
-
-SBF =[[0.1111111111111111,0.1111111111111111,0.1111111111111111],[0.1111111111111111,0.1111111111111111,0.1111111111111111],[0.1111111111111111,0.1111111111111111,0.1111111111111111]]
-
-#COL  =[[c[1][1],c[1][2],c[1][3]],[c[2][1],c[2][2],c[2][3]],[c[3][1],c[3][2],c[3][3]]]
-COL  =[[1,1,1],[1,1,1],[1,1,1]]
-
-
-A = SBF[0][0]*COL[0][0]+SBF[0][1]*COL[0][1]+SBF[0][2]*COL[0][2]+SBF[1][0]*COL[1][0]+SBF[1][1]*COL[1][1]+SBF[1][2]*COL[1][2]+SBF[2][0]*COL[2][0]+SBF[2][1]*COL[2][1]+SBF[2][2]*COL[2][2]
-
-
-#A = SBF[0][0] +SBF[0][1] +SBF[0][2] +SBF[1][0] +SBF[1][1] +SBF[1][2] +SBF[2][0] +SBF[2][1] +SBF[2][2] 
-
-
-
-
-"""
-
 
 def Line_detection_135D(img,y,x):
     
@@ -553,28 +531,3 @@ l9.show()
 #image.show()
 
 
-
-"""
-
-import numpy as np 
-a = np.array([[1,2,3],[0,2,5],[2,5,-1]]) 
-
-print ("Array a:")
-print (a) 
-
-
-print ('Inverse of a:' )
-print (np.flip(a, (0,1)))
-
-a = np.array([[1,1, 1],
-              [1, 1, 1],
-              [1, 1, 1]])
-b = np.array([[2, 1, 2],
-              [4, 1, 1],
-              [2, 1, 2]])
-
-np.matmul(a, b)
-
-np.sum(a)
-np.sum(a[:, :] * b[: , :])
-"""
